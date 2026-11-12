@@ -2,4 +2,7 @@
 
 Encrypted internal dashboard for Prodigi.dev (office TV).
 
-`index.html` is encrypted with StatiCrypt (AES-256, client side). The content is only readable with the password. No data files or unencrypted pages are stored in this repository.
+- `index.html`: the page design, encrypted with StatiCrypt (AES-256, client side). Readable only with the password.
+- `data.enc.json`: the dashboard data, encrypted with AES-256-GCM (key derived from the same password with PBKDF2-SHA256).
+
+No unencrypted data is stored in this repository.
